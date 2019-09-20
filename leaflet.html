@@ -2,15 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Recalibrating Queens</title>
+
+    <title>Recalibrating Western Queens</title>
+    <meta name="description" content="A mapping project investigating past development and changes in Western Queens.">
+
+    <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
    crossorigin=""/>
-    <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <!-- PLUGINS -->
+    <script src="plugins/leaflet-providers.js"></script>
+
+    <!-- FULL SCREEN OPTION -->
+    <link href='plugins/leaflet.fullscreen.css' rel='stylesheet' />
+    <script src='plugins/Leaflet.fullscreen.min.js'></script>
+
   </head>
+
   <body>
     <div class="container">
+      <!-- TOP PAGE MENU -->
+      <div class="navbar">
+          <ul id="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="leaflet.html">Map</a></li>
+              <li><a href="statement.html">Statement</a></li>
+              <li><a href="background.html">Background</a></li>
+              <li><a href="data.html">Data & Methods</a></li>
+              <li><a href="resources.html">Resources</a></li>
+          </ul>
+      </div>
+      <!-- MAP -->
       <h1>Recalibrating Queens</h1>
       <div id="map" class="map"></div>
       <p>Above, you can see a Leaflet map.</p>
